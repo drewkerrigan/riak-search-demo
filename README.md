@@ -50,7 +50,7 @@ curl http://localhost:4567/user/query/name_t/*Drew*
 Pagination
 
 ```
-curl http://localhost:4567/user/query/title_t/*Engineer*?rows=10&start=50
+curl http://localhost:4567/user/query/title_t/*Engineer*?rows=10&start=0
 ```
 
 Range query

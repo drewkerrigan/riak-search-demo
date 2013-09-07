@@ -11,7 +11,7 @@ get '/user/query/:term/:value' do
   results = []
   query = "#{params[:term]}:#{params[:value]}"
   rows = (params[:rows])? params[:rows].to_i : 10
-  start = (params[:start])? params[:start].to_i : 1
+  start = (params[:start])? params[:start].to_i : 0
 
   if(params[:from] && params[:to])
     query = "((#{query}) AND (created_dt:[#{params[:from]} TO #{params[:to]}]))"

@@ -13,13 +13,13 @@ req = Net::HTTP::Put.new(path, initheader = { 'Content-Type' => 'application/jso
 #req.body = '{"schema": "schema_name"}'
 Net::HTTP.new(host, port).start {|http| http.request(req) }
 
-sleep(10)
+sleep(15)
 
 puts "Adding index to bucket"
 bucket = Riak::Bucket.new(client, bucket_name)
 bucket.props = {'yz_index' => bucket_name}
 
-sleep(10)
+sleep(15)
 
 puts "Populating users"
 users = JSON.parse( IO.read("user_fixtures.json") )
