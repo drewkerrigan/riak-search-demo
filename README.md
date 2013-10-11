@@ -2,6 +2,8 @@
 
 This is a simple demo app that illustrates a sample usage of yokozuna as a search engine with Ruby Sinatra
 
+Here is a blog post that I've written to go along with this demo application: [Robust Search with Sinatra, Riak, and Yokozuna](http://www.drewkerrigan.com/robust-search-with-sinatra-riak-and-yokozuna/)
+
 ##Prerequisites
 
 You must have a [yokozuna](http://github.com/basho/yokozuna) Riak instance running. I advise making a backup of the data directory after installation and wiping data like so between tests from the riak bin directory:
